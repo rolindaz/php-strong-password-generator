@@ -41,7 +41,7 @@ require_once("./functions.php");
             $password_desired_length = (int)$_GET['password_length'];
             $generated_password .= generate_password($password_desired_length);
             $_SESSION['generated_password'] = $generated_password;
-            echo "<strong>" . $generated_password . "</strong>";
+            // var_dump($_SESSION['generated_password']);
         }
             ?>
         </div>
